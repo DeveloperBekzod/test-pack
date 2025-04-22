@@ -1,6 +1,5 @@
 {
     "name": "devbekzod/test-pack",
-    "version":"1.0.0",
     "description": "Test package",
     "type": "library",
     "license": "MIT",
