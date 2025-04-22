@@ -1,0 +1,35 @@
+{
+    "name": "devbekzod/test-pack",
+    "version":"1.0.0",
+    "description": "Test package",
+    "type": "library",
+    "license": "MIT",
+    "keywords":[
+        "php",
+        "laravel"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Devbekzod\\TestPack\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bekzod Raximov",
+            "email": "devbekzod@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": ">=7"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devbekzod\\TestPack\\Providers\\TestPackServiceProvider"
+            ]
+        }
+    }
+}
