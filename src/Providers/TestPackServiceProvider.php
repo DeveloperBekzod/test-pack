@@ -14,9 +14,9 @@ class TestPackServiceProvider extends ServiceProvider
 
     public function register(): void
     {
-        $this->loadRoutesFrom(__DIR__ . '/../../routes/main.php');
+        $this->loadRoutesFrom(__DIR__ . '/../../Routes/main.php');
 
-        $this->mergeConfigFrom(__DIR__ . '/../../config/config.php', 'test-pack');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'test-pack');
 
         $this->app->bind(TestPack::class, fn() => new TestPack());
     }
